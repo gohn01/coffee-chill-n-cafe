@@ -1,0 +1,879 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.normal {
+    margin: 0 100px;
+    padding: 0 100px;
+}
+
+.normalin {
+    margin-right: 100px;
+    padding-right: 100px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #000;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #000;
+}
+
+.cafe-content h1{
+    margin: 50px 0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 30px;
+    text-align: center;
+    color: #71500a;
+    font-size: 3rem;
+    text-shadow: 5px 1px 5px #000;
+}
+/*---------------------- header ----------------------------*/
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    height: 100px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0,0, 0.09);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin-bottom: 50px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li {
+    list-style-type: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+
+#navbar li a {
+     text-decoration: none;
+     font-size: large;
+     transition: 0.3s;
+}
+
+#navbar .cart a span{
+    position: absolute;
+    top: -9px;
+    left: 35px;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #71500a;
+    padding: 2px 8px;
+    border-radius: 50%;
+    border: 1px white solid;
+    color: #fff;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:#71500a;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+#navbar .login {
+    border: 1px solid rgb(107, 105, 105);
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+.logo img{
+    width: 150px;
+    height: 200px;
+    margin: 10px 0;
+    padding: 20px 0;
+}
+
+
+.location {
+    transition: 0.3s;
+}
+
+.location {
+    padding: 0;
+    margin: 0;
+}
+
+#navbar .login:hover {
+    color: #fff ;
+    background-color: #71500a;
+    border: none;
+}
+
+#navbar .location:hover {
+    color: #71500a;
+}
+
+#navbar .cart:hover {
+    color: #71500a;
+}
+
+/*----------------------------- section 1 index -----------------------*/
+
+#lobby {
+    height: 70vh;
+    margin-top: 50px;
+    text-align: center;
+    background-image: url("../images/makes.jpg");
+    background-size: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+#lobby h1{
+    padding-top: 150px;
+    font-size: 4rem;
+    text-shadow: 5px 1px 5px #000;
+}
+
+#lobby a{
+    text-decoration: none;
+    font-size: 30px;
+    border: 1px rgb(107, 105, 105) solid;
+    border-radius: 20px;
+    padding: 8px 15px;
+    text-shadow: 5px 1px 5px #000;
+    transition: 0.3s;
+}
+
+#lobby a:hover {
+    color: #71500a ;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0,0, 0.09);
+    border: none;
+    transform: scale(1.5);
+}
+
+
+/*-------------------- coffee chill'n cafe ---------------------*/
+
+#cafe {
+    height: 50vh;
+    margin-top: 100px;
+    padding-top: 100px;
+    text-align: center;
+    background-image: url("../images/blurbackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;    
+    backdrop-filter: blur(3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+}
+
+#cafe h2 {
+ font-size: 3rem;
+ font-style: italic;
+ padding-top: 50px ;
+ text-shadow: 5px 1px 5px #000;
+}
+
+
+
+/*-------------------- video -----------------------*/
+
+
+#video {
+    width: 90%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#video h2 {
+    padding-top: 50px;
+    text-align: center;
+    color: #71500a;
+    font-size: 3rem;
+    text-shadow: 5px 1px 5px #000;
+    font-weight: 500;
+}
+
+#video p {
+    text-align: center;
+    font-size: large;
+    padding-bottom: 50px;
+}
+
+/*------------------------- The Process --------------------*/
+
+.main-scroll-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px;
+    padding-bottom: 50px;
+}
+
+.cover {
+    position: relative;
+    width: 90%;
+    height: 50%;
+}
+
+/* .cover::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(90deg, black, transparent);
+}
+
+.cover::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 99;
+    height: 95%;
+    width: 100px;
+    background-image: linear-gradient(-90deg, black, transparent);
+} */
+
+.scroll-images{
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+.child {
+    min-width: 250px;
+    margin: 0 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.scroll-images::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+.child-img {
+    border-radius: 20px;
+    width: 250px;
+    height: 100%;
+}
+
+.arrow {
+    background: none;
+    font-size: 100px;
+    outline: none;
+    border: none;
+    color: rgb(49, 48, 48);
+}
+
+.arrow:hover {
+    color: #71500a;
+}
+
+
+/*---------------------------- lobby-content ---------------------------*/
+
+#cafe-saying {
+    height: 30vh;
+    text-align: center;
+}
+
+#cafe-saying h1 {
+    padding-top: 50px;
+    text-align: center;
+    color: #71500a;
+    font-size: 3rem;
+    text-shadow: 5px 1px 5px #000;
+    font-weight: 500;
+}
+
+#cafe-saying p {
+    font-weight: bold;
+}
+
+#content {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../images/selection.jpg");
+    flex-wrap: wrap;
+    padding: 0 100px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+#content h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 5px 1px 5px #000;
+    font-weight: 500;
+}
+
+#content img {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+    transition: 0.3s;
+    transition: 0.5s all ease-in-out;
+
+}
+
+#content img:hover {
+    border: 2px #fff solid;
+    transform: scale(1.1);
+}
+
+/*----------------------- Find a Store --------------------*/
+
+.map iframe {
+    width: 100%;
+    padding: 0 150px;
+}
+
+
+/*---------------------- Coffee Pages -------------------------*/
+
+#coffee-section {
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.shop-item img {
+    width: 250px;
+    height: 200px;
+    border: 1px solid #71500a;
+    border-radius: 10px;
+}
+
+.shop-item h2 {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.shop-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #71500a;
+    color: #fff;
+    font-weight: bold;
+    font-size: small;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+.solve {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------------------ Iced Coffee Page ----------------------*/
+
+#iced-section {
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.iced-item img {
+    width: 350px;
+    height: 300px;
+    border: 1px solid #71500a;
+    border-radius: 10px;
+}
+
+.iced-item h2 {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.iced-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #71500a;
+    color: #fff;
+    font-weight: bold;
+    font-size: small;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+.solve {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* ------------------ Dessert Page ----------------------*/
+
+#dessert-section {
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dessert-item img {
+    width: 350px;
+    height: 300px;
+    border: 1px solid #71500a;
+    border-radius: 10px;
+}
+
+.dessert-item h2 {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.dessert-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #71500a;
+    color: #fff;
+    font-weight: bold;
+    font-size: small;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+.solve {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------------------ Cart Page ----------------------*/
+
+.home {
+    display: flex;
+    justify-content: center;
+}
+
+.home a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 30px;
+    text-align: center;
+    color: #71500a;
+    font-size: 3rem;
+    text-shadow: 5px 1px 5px #000;
+    transition: 0.3s;
+}
+
+.home a:hover {
+    text-decoration: underline;
+}
+
+.products-container {
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0 150px;
+}
+
+.products-container i {
+    font-size: 25px;
+    color: #71500a;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.products-container img {
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.product-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+.product-header h5 {
+    border: none;
+    font-weight: bold;
+}
+
+.product-title {
+    width: 45%;
+}
+
+.price {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.quantity {
+    width: 30%;
+    border-bottom: 1px solid lightgray;
+    display: flex ;
+    align-items: center;
+}
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 ;
+    border-bottom: 1px solid lightgray;
+}
+
+.product img {
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 35%;
+    font-weight: bold;
+}
+
+.basketTotal {
+    width: 10%;
+    font-weight: bold;
+}
+
+/*---------------------------- line ----------------------------*/
+
+.line {
+    height: 1px;
+    background: rgb(209, 202, 202);
+    width: 100%;
+    margin: 10px 0;
+
+}
+
+/*--------------------- footer ----------------------*/
+
+#footer {
+    padding: 0 90px;
+    display: flex;  
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#footer h4 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#footer p {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+}
+
+#footer a {
+    text-decoration: none;
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+
+.row a i {
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+.row1 img{
+    border: 1px #71500a solid;
+    border-radius: 10px;
+}
+
+.ending h3{
+    opacity: 70%;
+    padding: 20px 0;
+    font-size: large;
+    text-align: center;
+}
+
+.row a i:hover {
+    color: #71500a;
+}
+
+#footer a:hover {
+    color: #71500a;
+}
+
+
+@media(max-width:820px){
+
+    #header {
+        padding: 0 20px;
+        margin: 0;
+    }
+ 
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #navbar .login {
+        margin-left: 20px;
+    }
+
+    /*---------------- lobby ---------------*/
+
+    #lobby {
+        height: 40vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    #lobby h1 {
+        font-size: 3rem;
+    }
+
+    #lobby a {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    /*----------------- cafe -----------------*/
+
+    #cafe {
+        height: 30vh;
+        margin: 20px 0 0 0;
+    }
+
+    .child {
+        min-width: 200px;
+    }
+
+    .child-img {
+        width: 200px;
+    }
+
+    .arrow {
+        font-size: 80px;
+    }
+
+    /*------------------ video ------------------*/
+
+    #video h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*----------------------- coffee lobby -----------------------*/
+
+    #content {
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+        padding-bottom: 50px;
+    }
+
+    #content h1 {
+        padding: 20px 0;
+    }
+
+    #content img{
+        width: 600px;
+        height: 100%;
+        
+    }
+
+    #cafe-saying h1{
+        padding-top: 0px;
+    }
+
+
+
+    /*------------------------------ footer ----------------------*/
+    #footer {
+        padding: 0 50px;
+    }
+
+    #footer a, h4, p{
+        font-size: 15px;
+    }
+
+
+
+}
+
+
+@media(max-width:477px) {
+
+    #header {
+        padding: 0 20px;
+    }
+
+    /*------------------------- lobby --------------------------*/
+    #lobby {
+        height: 50vh;
+        margin-top: 0;
+    }
+
+    #lobby h1 {
+        padding-top: 100px;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    /*----------------------------- cafe -----------------------*/
+
+    #cafe h2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    /*----------------------- the process ----------------*/
+
+    /*--------------------- coffee lobby content --------------------*/
+
+
+    #content {
+        padding-left: 50px;
+        padding-bottom: 20px;
+    }
+
+    #content img {
+        width: 300px;
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d6d9d9ca7e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/coffee chillin cafe.png">
+
+    <title>Coffee Chill'n Cafe</title>
+</head>
+<body>
+
+    <section id="header">
+        
+        <a href="index.html" class="logo"><img src="images/coffee chillin cafe.png" alt="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li class="location"><a href="location.html">Find a Store</a></li>
+                <li class="login" ><a href="login.html">Sign In</a></li>
+                <li class="cart"><a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i><span>0</span></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+            <i id="bar" class="fa-solid fa-outdent"></i>
+        </div>
+    </section>
+
+
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126811.5349436117!2d124.5904068024891!3d6.6642082306664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f80d5d1ec30407%3A0x83f9293de647f873!2sTacurong%20City%2C%20Sultan%20Kudarat!5e0!3m2!1sen!2sph!4v1672227507314!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    
+    <section id="making">
+        <div class="main-scroll-div">
+            <div>
+                <button class="arrow" onclick="arrowR()">&#171;</button>
+            </div>
+            <div class="cover">
+                <div class="scroll-images">
+                        <div class="child"><img class="child-img" src="../images/cafe1.jpg" alt="The Process"></div>
+                        <div class="child"><img class="child-img" src="../images/cafe2.jpg" alt="The Process"></div>
+                        <div class="child"><img class="child-img" src="../images/cafe3.jpg" alt="The Process"></div>
+                        <div class="child"><img class="child-img" src="../images/cafe4.jpg" alt="The Process"></div>
+                        <div class="child"><img class="child-img" src="../images/cafe5.jpg" alt="The Process"></div>
+                        <div class="child"><img class="child-img" src="../images/cafe6.jpg" alt="The Process"></div>
+                </div>
+            </div>
+            <div>
+                <button class="arrow" onclick="arrowL()">&#187;</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <footer>
+        <div id="footer">
+            <div class="col">
+                <h4>Contact</h4>
+                <p><strong>Address: </strong>Alapan 1A, Lancater New City, Imus Cavite</p>
+                <p><strong>Phone: </strong>09973979376</p>
+                <p><strong>Hours: </strong>7:00 - 16:00, Mon - Sat</p>
+                <div class="row">
+                    <h4>Follow us:</h4>
+                    <div>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.tiktok.com/en/"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <h4>Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row1">
+                    <img src="images/app.jpg" alt="">
+                    <img src="images/play.jpg" alt="">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="images/pay.png" alt="">
+            </div>
+        </div>
+        <div class="ending">
+            <h3> &copy; 2022, Perez Web, Cafe Chill'n Cafe.</h3>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
